@@ -57,7 +57,7 @@ class MahasiswaHelper(context: Context) {
                 mahasiswaModel.nim = cursor.getString(cursor.getColumnIndexOrThrow(NIM))
 
                 arrayList.add(mahasiswaModel)
-                cursor.moveToFirst()
+                cursor.moveToNext()
             } while (!cursor.isAfterLast)
 
         }
